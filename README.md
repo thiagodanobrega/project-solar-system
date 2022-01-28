@@ -1,6 +1,6 @@
 <p align="center">
-  <img alt="to.do" title="to.do" src="https://github.com/thiagodanobrega/project-solar-system/blob/master/screely-1643385814238.png?raw=true" width="400px" />
-  <img alt="to.do" title="to.do" src="https://github.com/thiagodanobrega/project-solar-system/blob/master/screely-1643385850737.png?raw=true" width="400px" />
+  <img alt="to.do" title="to.do" src="https://github.com/thiagodanobrega/project-solar-system/blob/master/screely-1643385814238.png?raw=true" width="600px" />
+  <img alt="to.do" title="to.do" src="https://github.com/thiagodanobrega/project-solar-system/blob/master/screely-1643385850737.png?raw=true" width="600px" />
 </p>
 
 ## 🚀 Tecnologias
