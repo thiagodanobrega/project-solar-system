@@ -1,0 +1,308 @@
+@import url('http://fonts.cdnfonts.com/css/alphacentauri');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  align-items: center;
+  background-image: url(./images/background.png);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100vh;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+header h1 {
+  color: #ced6db;
+  font-family: AlphaCentauri;
+  font-size: 6rem;
+}
+
+/* Stars */
+.star {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.shadow-planet {
+  background: black;
+  border-radius: 100%;
+  bottom: -57%;
+  box-shadow: inset 0 0 62px 20px rgba(60, 105, 138, 0.85);
+  height: 100%;
+  position: absolute;
+  width: 200%;
+}
+
+.subtitle {
+  color: #6e757c;
+  cursor: pointer;
+  font-family: Lato , sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  left: 0;
+  letter-spacing: 6px;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  top: 5%;
+  transition: 0.3s;
+}
+
+.subtitle ion-icon {
+  cursor: pointer;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.subtitle:hover {
+  color: white;
+}
+
+.horizont {
+  background: #038bff;
+  border-radius: 100%;
+  bottom: -27%;
+  filter: blur(30px);
+  height: 70%;
+  position: absolute;
+  width: 200%;
+}
+
+.glow {
+  background: #215496;
+  border-radius: 100%;
+  filter: blur(100px);
+  height: 100%;
+  opacity: 0.6;
+  position: absolute;
+  top: -10%;
+  width: 100%;
+}
+
+/* Section Planets */
+main {
+  background-image: linear-gradient(to bottom, black, rgba(15, 15, 15, 0.472)) , url(./images/background.png);
+}
+
+#planets-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+#planets-container .planet-title {
+  align-items: center;
+  display: flex;
+  gap: 0.6rem;
+  margin-left: 2rem;
+  position: absolute;
+  top: 5%;
+}
+
+.planet-title h2 {
+  font-family: Lato , sans-serif;
+  font-size: 2rem;
+}
+
+.planet-title ion-icon {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.planet-wrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+.planet-card {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  visibility: hidden;
+}
+
+.planet-card.active {
+  visibility: visible;
+}
+
+.planet-card img {
+  width: 370px;
+}
+
+.planet-card-info {
+  width: 50%;
+}
+
+.planet-number {
+  opacity: 0.5;
+}
+
+.planet-number h4 {
+  color: rgb(73, 72, 72);
+  font-family: Lato , sans-serif;
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.planet-name p {
+  font-family: AlphaCentauri;
+  font-size: 40px;
+}
+
+.planet-info p {
+  color: #fff;
+  font-family: Lato , sans-serif;
+  font-size: 1.2rem;
+  line-height: 30px;
+  opacity: 0.8;
+}
+
+.planet-link {
+  bottom: 5%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+}
+
+.planet-link-name {
+  cursor: pointer;
+  font-family: Lato , sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 0.5;
+  padding: 1rem;
+}
+
+.planet-link-name.active {
+  font-weight: 900;
+  opacity: 1;
+}
+
+/* Missions */
+.missions {
+  align-items: center;
+  color: white;
+  height: 100%;
+  justify-content: space-around;
+  padding-bottom: 5rem;
+  width: 100%;
+}
+
+.missions .planet-title {
+  align-items: center;
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+  padding-top: 2rem;
+}
+
+.mission-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.mission-card {
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  font-family: Lato , sans-serif;
+  height: 180px;
+  justify-content: center;
+  padding: 1rem 0;
+  width: 350px;
+}
+
+.mission-card p:nth-child( 1 ) {
+  border-bottom: 1px solid white;
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  border-top: 5px solid rgb(34, 34, 34);
+  color: white;
+  font-family: Lato , sans-serif;
+  font-size: 1.2rem;
+  padding: 30px;
+  text-align: center;
+}
+
+footer p {
+  opacity: 0.5;
+}
+
+@media ( max-width : 790px ) {
+
+  .planet-card {
+    flex-direction: column;
+  }
+
+  .planet-card img {
+    margin-bottom: 120px;
+    width: 300px;
+  }
+
+  .planet-card-info {
+    margin-bottom: 0;
+    margin-top: -180px;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .planet-link {
+    overflow-x: scroll;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
